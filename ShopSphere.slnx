@@ -1,9 +1,9 @@
 <Solution>
-  <Project Path="ShopSphere.API/ShopSphere.API.csproj" />
-  <Project Path="ShopSphere.Application/ShopSphere.Application.csproj" />
-  <Project Path="ShopSphere.Domain/ShopSphere.Domain.csproj" />
-  <Project Path="ShopSphere.Infrastructure/ShopSphere.Infrastructure.csproj" />
-  <Project Path="ShopSphere.Persistence/ShopSphere.Persistence.csproj" />
-  <Project Path="ShopSphere.Tests/ShopSphere.Tests.csproj" />
-  <Project Path="ShopSphere.Web/ShopSphere.Web.csproj" />
+  <Project Path="src/ShopSphere.API/ShopSphere.API.csproj" />
+  <Project Path="src/ShopSphere.Application/ShopSphere.Application.csproj" />
+  <Project Path="src/ShopSphere.Domain/ShopSphere.Domain.csproj" />
+  <Project Path="src/ShopSphere.Infrastructure/ShopSphere.Infrastructure.csproj" />
+  <Project Path="src/ShopSphere.Persistence/ShopSphere.Persistence.csproj" />
+  <Project Path="tests/ShopSphere.Tests/ShopSphere.Tests.csproj" />
+  <Project Path="src/ShopSphere.Web/ShopSphere.Web.csproj" />
 </Solution>
