@@ -1,0 +1,53 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+packages/
+
+# Logs
+*.log
+
+# Database files
+*.mdf
+*.ldf
+
+# EF Core migrations bundle
+bundle/
+
+# Publish output
+publish/
+
+# ASP.NET Core
+appsettings.Development.json
+
+# Node
+node_modules/
+
+# Angular
+dist/
+
+# React
+build/
+
+# Test results
+TestResults/
+
+# OS Files
+Thumbs.db
+Desktop.ini
+.DS_Store
