@@ -1,7 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using ShopSphere.Persistence.Context;
+using ShopSphere.Persistence.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+builder.Services.AddPersistenceServices();
 
 var app = builder.Build();
 
