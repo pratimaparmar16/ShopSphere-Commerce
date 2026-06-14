@@ -1,0 +1,26 @@
+﻿@model List<ShopSphere.Web.ViewModels.ProductViewModel>
+
+<h2>Products</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.CategoryName</td>
+            </tr>
+        }
+    </tbody>
+</table>
