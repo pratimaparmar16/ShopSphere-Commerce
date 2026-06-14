@@ -14,6 +14,7 @@ namespace ShopSphere.Persistence.DependencyInjection
         {
             services.AddScoped<IProductRepository,ProductRepository>();
             services.AddScoped<ICategoryRepository,CategoryRepository>();
+            services.AddScoped<IUnitOfWork,UnitOfWork>();
 
             return services;
         }

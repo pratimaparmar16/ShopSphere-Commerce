@@ -7,11 +7,13 @@ namespace ShopSphere.Application.Services;
 public class ProductService : IProductService
 {
     private readonly IProductRepository _productRepository;
+    private readonly IUnitOfWork _unitOfWork;
 
     public ProductService(
-        IProductRepository productRepository)
+        IProductRepository productRepository, IUnitOfWork unitOfWork = null)
     {
         _productRepository = productRepository;
+        _unitOfWork = unitOfWork;
     }
 
     public async Task<List<ProductDto>>
@@ -70,5 +72,6 @@ public class ProductService : IProductService
         };
 
         await _productRepository.AddAsync(product);
+        await _unitOfWork.SaveChangesAsync();
     }
 }
