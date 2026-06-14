@@ -27,7 +27,8 @@ public class ProductService : IProductService
             Price = p.Price,
             StockQuantity = p.StockQuantity,
             CategoryName =
-                p.Category?.Name ?? string.Empty
+                p.Category?.Name ?? string.Empty,
+            CreatedDate = p.CreatedDate
         }).ToList();
     }
 
@@ -64,7 +65,8 @@ public class ProductService : IProductService
         {
             Name = productDto.Name,
             Price = productDto.Price,
-            StockQuantity = productDto.StockQuantity
+            StockQuantity = productDto.StockQuantity,
+            CategoryId = productDto.CategoryId
         };
 
         await _productRepository.AddAsync(product);

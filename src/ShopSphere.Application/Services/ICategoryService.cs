@@ -7,9 +7,9 @@ namespace ShopSphere.Application.Services
 {
     public interface ICategoryService
     {
-        Task<List<ProductDto>> GetAllCategoriesAsync();
+        Task<List<CategoryDto>> GetAllCategoriesAsync();
 
-        Task<ProductDto?> GetCategoryByIdAsync(int id);
+        Task<CategoryDto?> GetCategoryByIdAsync(int id);
 
         Task CreateCategoryAsync(CategoryDto categoryDto);
     }

@@ -8,13 +8,18 @@ using System.Text;
 
 namespace ShopSphere.Persistence.Repositories
 {
-    //public class CategoryRepository : Repository<Category>, ICategoryRepository
-    //{
-    //    public CategoryRepository(ApplicationDbContext context) : base(context) { }
+    public class CategoryRepository : Repository<Category>, ICategoryRepository
+    {
+        public CategoryRepository(ApplicationDbContext context) : base(context) { }
 
-    //    public async Task<Category?> GetCategoryWithProductsAsync(int productId)
-    //    {
-    //        return await _context.Categories.Where(p => p.Products == categoryId).ToListAsync();
-    //    }
-    //}
+        public async Task<List<Category>> GetAllCategories()
+        {
+            return await _context.Categories.ToListAsync();
+        }
+
+        public async Task<Category?> GetCategoryWithProductsAsync(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

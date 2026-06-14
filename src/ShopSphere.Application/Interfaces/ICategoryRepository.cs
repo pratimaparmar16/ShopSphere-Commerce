@@ -5,8 +5,9 @@ using System.Text;
 
 namespace ShopSphere.Application.Interfaces
 {
-    public interface ICategoryRepository
+    public interface ICategoryRepository : IRepository<Category>
     {
         Task<Category?> GetCategoryWithProductsAsync(int categoryId);
+        Task<List<Category>> GetAllCategories();
     }
 }

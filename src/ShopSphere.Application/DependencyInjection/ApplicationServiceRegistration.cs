@@ -14,6 +14,10 @@ public static class ApplicationServiceRegistration
             IProductService,
             ProductService>();
 
+        services.AddScoped<
+            ICategoryService,
+            CategoryService>();
+
         return services;
     }
 }

@@ -15,5 +15,9 @@ namespace ShopSphere.Application.DTOs
         public int StockQuantity { get; set; }
 
         public string CategoryName { get; set; } = string.Empty;
+
+        public int CategoryId { get; set; }
+
+        public DateTime CreatedDate {  get; set; }
     }
 }

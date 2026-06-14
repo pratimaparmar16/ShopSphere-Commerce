@@ -16,7 +16,6 @@
     <Folder Include="Areas\" />
     <Folder Include="Filters\" />
     <Folder Include="Extensions\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ItemGroup>

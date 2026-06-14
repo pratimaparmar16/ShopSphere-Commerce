@@ -9,4 +9,6 @@ public class ProductViewModel
     public decimal Price { get; set; }
 
     public string CategoryName { get; set; } = string.Empty;
+
+    public DateTime? CreatedDate { get; set; }
 }

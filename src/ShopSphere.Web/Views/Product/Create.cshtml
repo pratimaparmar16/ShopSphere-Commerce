@@ -1,0 +1,49 @@
+﻿@model ShopSphere.Web.ViewModels.CreateProductPageViewModel
+
+<h2>Create Product</h2>
+
+<form asp-action="Create"
+      method="post">
+
+    @Html.AntiForgeryToken()
+
+    <div>
+        <label>Name</label>
+
+        <input asp-for="Product.Name" />
+
+        <span asp-validation-for="Product.Name">
+        </span>
+    </div>
+
+    <div>
+        <label>Price</label>
+
+        <input asp-for="Product.Price" />
+
+        <span asp-validation-for="Product.Price">
+        </span>
+    </div>
+
+    <div>
+        <label>Stock</label>
+
+        <input asp-for="Product.StockQuantity" />
+
+        <span asp-validation-for="Product.StockQuantity">
+        </span>
+    </div>
+
+    <div>
+        <label>Category</label>
+
+        <select asp-for="Product.CategoryId"
+                asp-items="Model.Categories">
+        </select>
+    </div>
+
+    <button type="submit">
+        Save
+    </button>
+
+</form>
